@@ -1,0 +1,50 @@
+/* CONTAINER */
+.container {
+  max-width: 900px;
+  margin: 80px auto;
+  text-align: center;
+}
+
+/* TABELA */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 30px;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #2ea44f;
+  color: white;
+}
+
+tr:hover {
+  background-color: #f5f5f5;
+}
+
+/* BOTÃO EXCLUIR */
+.btn-excluir {
+  background-color: #d93025;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-excluir:hover {
+  background-color: #b1271b;
+}
+
+/* NAV ATIVO */
+.navbar a.active {
+  color: #2ea44f;
+  font-weight: bold;
+}
