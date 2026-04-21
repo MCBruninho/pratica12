@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Agenda - ReservaAí</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <!-- NAV igual à home -->
+  <header class="navbar">
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="cadastro.html">Novo Agendamento</a>
+      <a href="listagem.html" class="active">Calendário</a>
+    </nav>
+  </header>
+
+  <!-- CONTEÚDO -->
+  <main class="container">
+    <h1>Agenda de Pacientes</h1>
+    <p>Confira os agendamentos organizados por data</p>
+
+    <table id="tabela-agendamentos">
+      <thead>
+        <tr>
+          <th>Paciente</th>
+          <th>Data</th>
+          <th>Horário</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- preenchido via JS -->
+      </tbody>
+    </table>
+
+    <p id="mensagem-vazia" style="display: none;">
+      Nenhum agendamento encontrado.
+    </p>
+  </main>
+
+  <footer>
+    <p>© 2026 ReservaAí</p>
+  </footer>
+
+  <script src="./listagem.js"></script>
+</body>
+</html>
