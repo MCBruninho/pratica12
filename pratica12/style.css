@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #FAFAFA; /* Fundo levemente cinza/gelo para destacar a logo branca */
+    color: #333333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* --- MENU NO TOPO --- */
+header {
+    display: flex;
+    justify-content: center; /* Centraliza o menu */
+    padding: 25px 20px;
+    background-color: transparent;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    background-color: #FFFFFF;
+    padding: 15px 40px;
+    border-radius: 50px; /* Menu em formato de "pílula" */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #7F8C8D;
+    font-weight: 600;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.menu li a:hover, .menu li a.ativo {
+    color: #2BAE4A; /* Verde da sua logo */
+}
+
+/* --- ÁREA PRINCIPAL CENTRALIZADA --- */
+.hero {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza tudo horizontalmente */
+    justify-content: center; /* Centraliza tudo verticalmente */
+    text-align: center;
+    padding: 20px 20px 60px 20px;
+    gap: 30px;
+}
+
+/* Tamanho e estilo da sua logo */
+.logo-centro {
+    max-width: 350px; /* Define um tamanho legal para a logo */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.hero-text {
+    max-width: 600px; /* Limita a largura do texto para não ficar vazado nas bordas */
+}
+
+.hero-text h1 {
+    font-size: 2.8rem;
+    color: #333333;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 1.1rem;
+    color: #666666;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+/* Botão Verde */
+.btn-principal {
+    display: inline-block;
+    background-color: #2BAE4A; /* Verde escuro inspirado na sua logo */
+    color: #FFFFFF;
+    padding: 18px 45px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 50px;
+    box-shadow: 0 10px 25px rgba(43, 174, 74, 0.3);
+    transition: all 0.3s ease;
+}
+
+.btn-principal:hover {
+    background-color: #228b3a; /* Tom mais escuro no hover */
+    transform: translateY(-4px);
+    box-shadow: 0 15px 30px rgba(43, 174, 74, 0.4);
+}
+
+/* --- RODAPÉ --- */
+footer {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #FFFFFF;
+    color: #7F8C8D;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    border-top: 1px solid #EAEAEA;
+}
+
+footer strong {
+    color: #333333;
+}
+
+/* --- RESPONSIVIDADE --- */
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+        padding: 20px;
+        border-radius: 20px;
+        width: 100%;
+    }
+    
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    .logo-centro {
+        max-width: 250px;
+    }
+}
